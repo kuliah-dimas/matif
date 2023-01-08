@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.Scanner;
+
 import static java.lang.System.out;
 
 public class Relasi {
@@ -9,6 +11,7 @@ public class Relasi {
     int jumlahAnggotaA;
     int jumlahAnggotaB;
     int jumlahRelasi;
+
 
     private String bacaKey() {
         Console console = System.console();
@@ -44,7 +47,6 @@ public class Relasi {
             jumlahRelasi = Integer.parseInt((bacaKey()));
         } while (jumlahRelasi > jmlRelasiMaks);
 
-        out.println("Masukkan Relasi Yang Terjadi: ");
         for(int i = 1; i <= jumlahRelasi; i++) {
           String[] temp = new String[100];
           String[] temp2 = new String[100];
